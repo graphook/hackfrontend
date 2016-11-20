@@ -1,0 +1,44 @@
+.set {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+
+  .set-options {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    margin-top: 16px;
+
+    input[type=text] {
+      height: 50px;
+      padding-left: 16px;
+      border: 1px solid #EEE;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      border-right: transparent;
+    }
+
+    .title {
+      flex-grow: 1;
+    }
+    .description {
+      flex-grow: 3;
+    }
+    button {
+      width: 50px;
+      border: 1px solid #EEE;
+      background-color: #FFF;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
+  .content-container {
+    position: relative;
+    flex-grow: 1;
+    margin-top: 16px;
+    border-top: 1px solid #EEE;
+  }
+}

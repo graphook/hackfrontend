@@ -1,0 +1,32 @@
+
+header {
+  position: relative;
+	height: 70px;
+	background-color: #FFF;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  h1 {
+    margin: 0;
+    
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      list-style: none;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

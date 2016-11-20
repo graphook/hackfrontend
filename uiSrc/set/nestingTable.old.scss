@@ -1,0 +1,101 @@
+
+.nesting-table {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+
+  .headerBanner {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    border-right: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+
+    .headItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid #AAA;
+      box-sizing: border-box;
+
+      .headItemContainer {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .headItem:first-of-type {
+      border-left: transparent;
+    }
+    .leafHeadItem {
+      width: 200px;
+    }
+  }
+
+  .addRemoveUi {
+    display: flex;
+    background-color: #FFF;
+    border-bottom: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+    width: 100%;
+    div {
+      flex-grow: 1;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #000;
+    margin-top: -1px;
+    border-right: 1px solid #AAA;
+
+    .item {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      flex-direction: row;
+      box-sizing: border-box;
+      flex-grow: 1;
+    }
+    .arrayContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .leafItem {
+      width: 200px;
+      border-bottom: 1px solid #AAA;
+      border-left: 1px solid #AAA;
+
+      input[type=text] {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: transparent;
+      }
+    }
+  }
+  .row:hover {
+    background-color: #EEE;
+  }
+
+}
