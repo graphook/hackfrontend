@@ -21,6 +21,6 @@ module.exports = {
   },
   output: {
     path: __dirname + '/uiBuild',
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   }
 };
